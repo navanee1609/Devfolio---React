@@ -319,8 +319,39 @@ export const projects = [
     webapp: "https://blooger-blogs.netlify.app/"
    
   },
+  // {
+  //   id: 1,
+  //   title: "Note Keeper - CRUD Operations in JavaScript",
+  //   date: "2023",
+  //   description:
+  //   "Note Keeper project is a beginner-level JavaScript application that showcases my ability to implement Create, Read, Update, and Delete (CRUD) operations. Users can effortlessly add, view, edit, and delete notes, with the entire functionality driven by JavaScript. CSS styling ensures a visually appealing and user-friendly interface, making this a practical demonstration of my developing JavaScript skills. You can experience the live project here.",
+  //   image:
+  //     "https://user-images.githubusercontent.com/120004894/279388670-f918259f-9ee7-4b79-a54b-0367e5d46d9e.png",
+  //   tags: [
+  //     "HTML",
+  //     "CSS",
+  //     "Javascript"
+  //   ],
+  //   category: "web app",
+  //   github: "https://github.com/navanee1609/Notekeeper",
+  //   webapp: "https://notekeeper-dailynotes.netlify.app/",
+  // },
   {
-    id: 1,
+    id: 2,
+    title: "Cook.io - Online Recipe App",
+    date: "2023",
+    description:
+      "Cook.io is an impressive showcase of my HTML, CSS, and JavaScript skills, enriched by the integration of the Edamam API. This project offers a user-friendly platform for recipe discovery, empowering users to search, explore, and interact with a vast array of culinary ideas. It boasts features like filtering, sorting, saving favorites, and creating shopping lists. Its responsive design ensures compatibility with a range of devices. The utilization of the Edamam API enhances the app's capabilities. Throughout development, I successfully addressed challenges related to API integration, making this project a testament to my evolving web development skills. As my journey continues, I look forward to further enhancing the app by adding user accounts and additional functionalities. Explore the live project here to see it in action.",
+    image:
+      "https://user-images.githubusercontent.com/120004894/279390357-2ca33d8e-6164-47b5-849e-c8dd60fc7dc1.png",
+    tags: ["HTML","CSS","JavaScript"],
+    category: "android app",
+    github: "https://github.com/navanee1609/cook.io",
+    webapp: "https://cookio-recipehub.netlify.app/",
+   
+  },
+  {
+    id: 3,
     title: "Note Keeper - CRUD Operations in JavaScript",
     date: "2023",
     description:
@@ -334,34 +365,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/navanee1609/Notekeeper",
-    webapp: "https://notekeeper-dailynotes.netlify.app/",
-  },
-  {
-    id: 2,
-    title: "Cook.io - Online Recipe App",
-    date: "2023",
-    description:
-      "Cook.io is an impressive showcase of my HTML, CSS, and JavaScript skills, enriched by the integration of the Edamam API. This project offers a user-friendly platform for recipe discovery, empowering users to search, explore, and interact with a vast array of culinary ideas. It boasts features like filtering, sorting, saving favorites, and creating shopping lists. Its responsive design ensures compatibility with a range of devices. The utilization of the Edamam API enhances the app's capabilities. Throughout development, I successfully addressed challenges related to API integration, making this project a testament to my evolving web development skills. As my journey continues, I look forward to further enhancing the app by adding user accounts and additional functionalities. Explore the live project here to see it in action.",
-    image:
-      "https://user-images.githubusercontent.com/120004894/279390357-2ca33d8e-6164-47b5-849e-c8dd60fc7dc1.png",
-    tags: ["HTML","CSS","JavaScript"],
-    category: "web app",
-    github: "https://github.com/navanee1609/cook.io",
-    webapp: "https://cookio-recipehub.netlify.app/",
-   
-  },
-  {
-    id: 3,
-    title: "Buckoid",
-    date: "Dec 2021 - Apr 2022",
-    description:
-      "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
-    image:
-      "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-    tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Buckoid-Android-App",
-    webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+    webapp: "https://notekeeper-dailynotes.netlify.app/"
   },
   {
     id: 10,
