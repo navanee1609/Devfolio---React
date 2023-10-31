@@ -365,16 +365,16 @@ export const projects = [
   },
   {
     id: 10,
-    title: "Job Finding App",
-    date: "Jun 2023 - Jul 2023",
+    title: "Notary - Word counting app",
+    date: "2023",
     description:
-      "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
+      "Notary is a word finding web application developed with HTML, CSS, and JavaScript. This project offers users a tool to search and discover words, definitions, and related information. Users can input words, explore meanings, and access synonyms and antonyms. The app's responsive design ensures compatibility across various devices. This project showcases my skills in web development and interactive features, making it a handy resource for word enthusiasts and learners.",
     image:
       "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-    tags: ["React Native", "JavaScript", "Axios"],
+    tags: ["HTML","CSS", "JavaScript"],
     category: "android app",
-    github: "https://github.com/rishavchanda/Job-finder-App",
-    webapp: "https://github.com/rishavchanda/Job-finder-App",
+    github: "https://github.com/navanee1609/Notary",
+    webapp: "https://notary-discover.netlify.app/",
   },
   {
     id: 4,
