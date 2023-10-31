@@ -378,16 +378,16 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Whatsapp Clone",
-    date: "Jul 2021",
+    title: "Evara - Online Shopping Platform",
+    date: "2023",
     description:
-      "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
+    "Evara is an online shopping platform I developed, showcasing my proficiency in HTML, CSS, and JavaScript. It offers a responsive and visually appealing user interface for a seamless shopping experience. Users can browse, select, and purchase products with ease. This project reflects my ability to create a dynamic and interactive e-commerce website.",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89",
-    tags: ["React Js", "Firebase", "Firestore", "Node JS"],
+      "https://user-images.githubusercontent.com/120004894/279330967-680fd04f-4d91-41c5-8f67-6990c4412bf9.png",
+    tags: ["HTML","CSS","Javascript"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-    webapp: "https://whatsapp-clone-rishav.web.app",
+    github: "https://github.com/navanee1609/Evara",
+    webapp: "https://evara-online-shopping.netlify.app/",
   },
   {
     id: 5,
