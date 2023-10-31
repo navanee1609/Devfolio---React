@@ -391,16 +391,16 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Todo Web App",
-    date: "Jun 2021",
+    title: " GPT-3 & OpenAI Influencer Page",
+    date: "2023",
     description:
-      " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
+      " The GPT-3 & OpenAI Influencer Page is a dynamic web application built with React.js, dedicated to showcasing the power and potential of GPT-3 and OpenAI. This project will provide an engaging user experience, featuring interactive sections that explain GPT-3's applications, its impact on various industries, and the latest advancements. Users can explore case studies, view demos, and access informative content about OpenAI's innovations. The use of React.js ensures a responsive and efficient website that effectively communicates the groundbreaking capabilities of GPT-3 and OpenAI, making it an invaluable resource for tech enthusiasts and businesses alike.",
     image:
-      "https://camo.githubusercontent.com/a328255ad96f861f57d25096d28018ab2656c689a1456b0d145764009bed2d1a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
-    tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
+      "https://user-images.githubusercontent.com/120004894/279393453-e0d0b130-1c35-473f-9675-84c5a69e6123.png",
+    tags: ["React Js"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Todo-Web-App",
-    webapp: "https://rishav-react-todo.netlify.app/",
+    github: "https://github.com/navanee1609/gpt3",
+    webapp: "https://gpt3-openai-react.netlify.app/",
   },
   {
     id: 6,
