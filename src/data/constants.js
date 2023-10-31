@@ -290,24 +290,16 @@ export const education = [
 export const projects = [
   {
     id: 9,
-    title: "Trackify",
-    date: "Jun 2023 - Jul 2023",
+    title: "NewsGrid",
+    date: "2023",
     description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
+      "NewsGrid is a responsive news blog article layout I created as a beginner frontend developer. This project features a visually appealing grid layout for news articles, complete with semantic HTML structure and CSS styling to ensure a pleasing and organized presentation of news content. The project's responsiveness guarantees it looks great on various devices, and it serves as a testament to my HTML and CSS skills in creating user-friendly, grid-based web layouts. In the future, I plan to enhance it with JavaScript functionality for improved user interaction. You can check out the live project here",
     image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+      "https://user-images.githubusercontent.com/120004894/267870549-dd299367-f8f4-42d9-b0ca-64a279ddb800.png",
     tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
+     "HTML",
+     "CSS",
+     
     ],
     category: "web app",
     github: "https://github.com/rishavchanda/Trackify",
