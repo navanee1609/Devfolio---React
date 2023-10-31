@@ -302,35 +302,22 @@ export const projects = [
      
     ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify.duckdns.org",
+    github: "https://github.com/navanee1609/newsgrid",
+    webapp: "https://newsgrid-newsblog.netlify.app/",
   },
   {
     id: 0,
-    title: "Podstream",
-    date: "Apr 2023 - May 2023",
+    title: "Blooger",
+    date: "2023",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+    "Blogger - Traveling Blog Page: is a testament to my skills as a beginner frontend developer. This project features captivating travel blog posts with titles, featured images, and interactive read more buttons, enhancing the user experience. I've utilized HTML for content structure, CSS for styling, and a touch of JavaScript for interactivity, ensuring a seamless and responsive design across devices. It's a demonstration of my ability to create engaging web content, and I look forward to further expanding its features to offer even more dynamic and user-friendly experiences. You can explore the live project here.",
     image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+      "https://user-images.githubusercontent.com/120004894/267903261-d21ecfa0-481d-4b0f-96db-def87ef6e0a7.png",
+    tags: ["HTML","CSS","JavaScript"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],
+    github: "https://github.com/navanee1609/BloogerWebsite",
+    webapp: "https://blooger-blogs.netlify.app/"
+   
   },
   {
     id: 1,
