@@ -12,7 +12,8 @@ export const Bio = {
   linkedin: "https://www.linkedin.com/in/navaneethan-k-v-546a9025b/",
   twitter: "https://twitter.com/RishavChanda",
   insta: "https://www.instagram.com/rishav_chanda/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
+  phone: "tel:+7639096688",
+  
 };
 
 export const skills = [
