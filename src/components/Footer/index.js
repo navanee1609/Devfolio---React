@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PhoneIcon from '@mui/icons-material/Phone';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Bio } from '../../data/constants';
@@ -97,8 +97,8 @@ function Footer() {
           <NavLink href="#education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display"><PhoneIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.phone} target="display"><PhoneIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.email} target="display"><MailIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
