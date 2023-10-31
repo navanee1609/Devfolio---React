@@ -345,7 +345,7 @@ export const projects = [
     image:
       "https://user-images.githubusercontent.com/120004894/279390357-2ca33d8e-6164-47b5-849e-c8dd60fc7dc1.png",
     tags: ["HTML","CSS","JavaScript"],
-    category: "android app",
+    category: "web app",
     github: "https://github.com/navanee1609/cook.io",
     webapp: "https://cookio-recipehub.netlify.app/",
    
@@ -363,7 +363,7 @@ export const projects = [
       "CSS",
       "Javascript"
     ],
-    category: "web app",
+    category: "android app",
     github: "https://github.com/navanee1609/Notekeeper",
     webapp: "https://notekeeper-dailynotes.netlify.app/"
   },
@@ -374,7 +374,7 @@ export const projects = [
     description:
       "Notary is a word finding web application developed with HTML, CSS, and JavaScript. This project offers users a tool to search and discover words, definitions, and related information. Users can input words, explore meanings, and access synonyms and antonyms. The app's responsive design ensures compatibility across various devices. This project showcases my skills in web development and interactive features, making it a handy resource for word enthusiasts and learners.",
     image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
+      "https://user-images.githubusercontent.com/120004894/279400080-ec63da22-9e67-44e4-85e4-5827e841f823.png",
     tags: ["HTML","CSS", "JavaScript"],
     category: "android app",
     github: "https://github.com/navanee1609/Notary",
@@ -419,32 +419,32 @@ export const projects = [
     github: "https://github.com/navanee1609/car-rent",
     webapp: "https://rent-car-react.netlify.app/home",
   },
-  {
-    id: 7,
-    title: "Quiz App",
-    date: "Dec 2020 - Jan 2021",
-    description:
-      "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
-    image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/64485885/239726262-c1b061d1-d9d0-42ef-9f1c-0412d14bc4f6.gif",
-    tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Quiz-Earn",
-    webapp: "https://github.com/rishavchanda/Quiz-Earn",
-  },
-  {
-    id: 8,
-    title: "Face Recognition",
-    date: "Jan 2021",
-    description:
-      "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-    image:
-      "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "machine learning",
-    github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-    webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-  },
+  // {
+  //   id: 7,
+  //   title: "Quiz App",
+  //   date: "Dec 2020 - Jan 2021",
+  //   description:
+  //     "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
+  //   image:
+  //     "https://github-production-user-asset-6210df.s3.amazonaws.com/64485885/239726262-c1b061d1-d9d0-42ef-9f1c-0412d14bc4f6.gif",
+  //   tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
+  //   category: "android app",
+  //   github: "https://github.com/rishavchanda/Quiz-Earn",
+  //   webapp: "https://github.com/rishavchanda/Quiz-Earn",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Face Recognition",
+  //   date: "Jan 2021",
+  //   description:
+  //     "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
+  //   image:
+  //     "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
+  //   tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+  //   category: "machine learning",
+  //   github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+  //   webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+  // },
 ];
 
 export const TimeLineData = [
