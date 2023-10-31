@@ -156,10 +156,10 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
+    
     role: "Personalisation",
     company: "A glimpse of my individuality",
-    // date: "Aug 2023 - July 2023",
+    
     desc: "As a budding React virtuoso 🚀, I'm fervently dedicated to crafting web experiences that transcend the ordinary, infusing every pixel with elegance and enchantment ✨. My unwavering passion for unraveling intricate challenges fuels my odyssey in the realm of front-end wizardry 🧙. The prospect of harmonizing with a dynamic ensemble 🤝, while imbibing wisdom from industry sages 🧠, thrills me as I amplify my proficiencies in this ever-mutating domain 🌐.",
    
   },

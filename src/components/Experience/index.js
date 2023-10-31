@@ -76,11 +76,11 @@ const TimelineSection = styled.div`
 
 const index = () => {
     return (
-        <Container id="experience">
+        <Container id="visionary">
             <Wrapper>
                 <Title>Visionary</Title>
                 <Desc>
-                Launching My Career : A Fresh Perspective on Front-End Engineering
+                Launching My Career: A Fresh Perspective on Front-End Engineering
                 </Desc>
                 <TimelineSection>
                     <Timeline>
