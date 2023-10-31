@@ -177,16 +177,16 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
+   
     school: "Besant Technologies",
     date: "2023",
-    // grade: "8.75 CGPA",
+    grade: "90%",
     desc: "With a comprehensive front-end development course under my belt, I've cultivated expertise in HTML, CSS, and JavaScript. This educational journey has empowered me to craft visually captivating, responsive websites and dynamic web applications. Complementing this, I've refined my abilities through hands-on projects using React.js, a powerful tool for contemporary web development. These experiences have enriched my understanding of front-end development, igniting my passion to design user-centric and captivating digital solutions.",
     degree: "Front End Development Mastery along with react-  js",
   },
   {
     id: 1,
-    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
+    
     school: "Dhanalakshmi Srinivasan Enginerring College",
     date: "2018-2022",
     grade: "8.75 CGPA",
@@ -195,16 +195,16 @@ export const education = [
   },
   {
     id: 2,
-    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+    
     school: "Vivekananda Matric and Higher Secondary School",
     date: "2016-2017",
-    grade: "91.72",
+    grade: "91.72%",
     desc: "I've embraced a dynamic academic journey. My studies have fostered critical thinking and a thirst for knowledge. Through my dedication and adaptability, I've honed essential skills that transcend disciplines, preparing me for future challenges and opportunities.",
     degree: "HSC- XII(std) (BIO-MATHS)",
   },
   {
     id: 3,
-    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+    
     school: "Vivekananda Matric and Higher Secondary School",
     date: "2014-2015",
     grade: "95%",
@@ -227,8 +227,8 @@ export const projects = [
      "CSS",
      
     ],
-    category: "web app",
-    github: "https://github.com/navanee1609/newsgrid",
+    category: "machine learning",
+    github: "htvscode-file://vscode-app/c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmltps://github.com/navanee1609/newsgrid",
     webapp: "https://newsgrid-newsblog.netlify.app/",
   },
   {
@@ -240,7 +240,7 @@ export const projects = [
     image:
       "https://user-images.githubusercontent.com/120004894/267903261-d21ecfa0-481d-4b0f-96db-def87ef6e0a7.png",
     tags: ["HTML","CSS","JavaScript"],
-    category: "web app",
+    category: "machine learning",
     github: "https://github.com/navanee1609/BloogerWebsite",
     webapp: "https://blooger-blogs.netlify.app/"
    
@@ -374,9 +374,9 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  { year: 2015, text: "Completed SSLC" },
+  { year: 2017, text: "Completed HSC" },
+  { year: 2018, text: "Joined College" },
+  { year: 2022, text: "Completed my Bachelor's" },
+  { year: 2021, text: "Started my career as Front-End Developer" },
 ];
