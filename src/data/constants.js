@@ -9,7 +9,7 @@ export const Bio = {
   github: "https://github.com/navanee1609",
   resume:
     "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+  linkedin: "https://www.linkedin.com/in/navaneethan-k-v-546a9025b/",
   twitter: "https://twitter.com/RishavChanda",
   insta: "https://www.instagram.com/rishav_chanda/",
   facebook: "https://www.facebook.com/rishav.chanda.165/",
