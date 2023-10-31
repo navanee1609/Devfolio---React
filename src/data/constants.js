@@ -321,50 +321,34 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Vexa",
-    date: "Oct 2022 - Present",
+    title: "Note Keeper - CRUD Operations in JavaScript",
+    date: "2023",
     description:
-      "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
+    "Note Keeper project is a beginner-level JavaScript application that showcases my ability to implement Create, Read, Update, and Delete (CRUD) operations. Users can effortlessly add, view, edit, and delete notes, with the entire functionality driven by JavaScript. CSS styling ensures a visually appealing and user-friendly interface, making this a practical demonstration of my developing JavaScript skills. You can experience the live project here.",
     image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+      "https://user-images.githubusercontent.com/120004894/279388670-f918259f-9ee7-4b79-a54b-0367e5d46d9e.png",
     tags: [
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-      "NodeMailer",
+      "HTML",
+      "CSS",
+      "Javascript"
     ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
+    github: "https://github.com/navanee1609/Notekeeper",
+    webapp: "https://notekeeper-dailynotes.netlify.app/",
   },
   {
     id: 2,
-    title: "Brain Tumor Detection",
-    date: "Jan 2023 - Mar 2023",
+    title: "Cook.io - Online Recipe App",
+    date: "2023",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+      "Cook.io is an impressive showcase of my HTML, CSS, and JavaScript skills, enriched by the integration of the Edamam API. This project offers a user-friendly platform for recipe discovery, empowering users to search, explore, and interact with a vast array of culinary ideas. It boasts features like filtering, sorting, saving favorites, and creating shopping lists. Its responsive design ensures compatibility with a range of devices. The utilization of the Edamam API enhances the app's capabilities. Throughout development, I successfully addressed challenges related to API integration, making this project a testament to my evolving web development skills. As my journey continues, I look forward to further enhancing the app by adding user accounts and additional functionalities. Explore the live project here to see it in action.",
     image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "machine learning",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],
+      "https://user-images.githubusercontent.com/120004894/279390357-2ca33d8e-6164-47b5-849e-c8dd60fc7dc1.png",
+    tags: ["HTML","CSS","JavaScript"],
+    category: "web app",
+    github: "https://github.com/navanee1609/cook.io",
+    webapp: "https://cookio-recipehub.netlify.app/",
+   
   },
   {
     id: 3,
