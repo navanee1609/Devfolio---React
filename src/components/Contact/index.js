@@ -170,8 +170,8 @@ const Contact = () => {
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        <Snackbar open={open} autoHideDuration={6000} onClose={() => setOpen(false)} />
-        <Snackbar open={alertOpen} autoHideDuration={6000} onClose={handleAlertClose}>
+        <Snackbar open={open} autoHideDuration={9000} onClose={() => setOpen(false)} />
+        <Snackbar open={alertOpen} autoHideDuration={9000} onClose={handleAlertClose}>
           <AlertWrapper>
             <Alert onClose={handleAlertClose} variant="filled" severity="info">
               Your request is being sent to Navaneethan.
