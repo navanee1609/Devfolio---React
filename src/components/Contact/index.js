@@ -118,25 +118,41 @@ const ContactButton = styled.input`
   font-weight: 600;
 `;
 
+const AlertWrapper = styled.div`
+  .MuiAlert-filledInfo {
+    background-color: white !important;
+    color: green !important;
+  }
+
+  .MuiSvgIcon-root {
+    fill: black !important;
+  }
+`;
+
 const Contact = () => {
   const [open, setOpen] = useState(false);
+  const [alertOpen, setAlertOpen] = useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm("service_2kae8nq", "template_ykkmjcz", form.current)
-
       .then(
         (result) => {
           console.log(result.text);
           setOpen(true);
+          setAlertOpen(true); // Show custom alert
           form.current.reset();
         },
         (error) => {
           console.log(error.text);
         }
       );
+  };
+
+  const handleAlertClose = () => {
+    setAlertOpen(false);
   };
 
   return (
@@ -152,14 +168,13 @@ const Contact = () => {
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={() => setOpen(false)}
-        >
-          <Alert onClose={() => setOpen(false)} variant="success" sx={{ width: '100%' }}>
-            Email sent successfully!
-          </Alert>
+        <Snackbar open={open} autoHideDuration={6000} onClose={() => setOpen(false)} />
+        <Snackbar open={alertOpen} autoHideDuration={6000} onClose={handleAlertClose}>
+          <AlertWrapper>
+            <Alert onClose={handleAlertClose} variant="filled" severity="info">
+              Your request is being sent to Navaneethan.
+            </Alert>
+          </AlertWrapper>
         </Snackbar>
       </Wrapper>
     </Container>
