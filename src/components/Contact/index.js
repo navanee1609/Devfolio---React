@@ -119,22 +119,11 @@ const ContactButton = styled.input`
 `;
 
 const AlertWrapper = styled.div`
-  position: fixed;
-  top: 10px; /* Adjust the top position as needed */
-  right: 10px; /* Adjust the right position as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  z-index: 1000;
-
-  @media (min-width: 769px) {
-    top: 50px; /* Adjust the top position for larger screens */
-  }
-
   .MuiAlert-filledInfo {
     background-color: white !important;
     color: green !important;
+    margin-top: -50px;
+    z-index:1000;
   }
 
   .MuiSvgIcon-root {
@@ -153,7 +142,7 @@ const Contact = () => {
     const fromEmail = e.target.from_email.value;
 
     emailjs
-      .sendForm("service_2kae8nq", "template_ykkmjcz", { from_name: fromName, from_email: fromEmail })
+      .sendForm("service_2kae8nq", "template_ykkmjcz", e.target)
       .then(
         (result) => {
           console.log(result.text);
