@@ -4,7 +4,7 @@ import App from './App';
 
 import emailjs from 'emailjs-com';
 
-emailjs.init("wXAAnIaDf_sAbDnBZ");
+emailjs.init("g-P3tk-xIae8oKn6U");
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
