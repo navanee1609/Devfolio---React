@@ -119,11 +119,22 @@ const ContactButton = styled.input`
 `;
 
 const AlertWrapper = styled.div`
+  position: fixed;
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+
+  @media (min-width: 769px) {
+    top: 50px; /* Adjust the top position for larger screens */
+  }
+
   .MuiAlert-filledInfo {
     background-color: white !important;
     color: green !important;
-    margin-top: -50px;
-    z-index:1000;
   }
 
   .MuiSvgIcon-root {
@@ -138,8 +149,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const fromName = e.target.from_name.value;
+    const fromEmail = e.target.from_email.value;
+
     emailjs
-      .sendForm("service_2kae8nq", "template_ykkmjcz", form.current)
+      .sendForm("service_2kae8nq", "template_ykkmjcz", { from_name: fromName, from_email: fromEmail })
       .then(
         (result) => {
           console.log(result.text);
@@ -170,14 +184,18 @@ const Contact = () => {
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        <Snackbar open={open} autoHideDuration={9000} onClose={() => setOpen(false)} />
-        <Snackbar open={alertOpen} autoHideDuration={9000} onClose={handleAlertClose}>
-          <AlertWrapper>
+        <AlertWrapper>
+          <Snackbar open={open} autoHideDuration={9000} onClose={() => setOpen(false)}>
+            <Alert onClose={() => setOpen(false)} variant="filled" severity="info">
+              Your request is being sent to Navaneethan.
+            </Alert>
+          </Snackbar>
+          <Snackbar open={alertOpen} autoHideDuration={9000} onClose={handleAlertClose}>
             <Alert onClose={handleAlertClose} variant="filled" severity="info">
               Your request is being sent to Navaneethan.
             </Alert>
-          </AlertWrapper>
-        </Snackbar>
+          </Snackbar>
+        </AlertWrapper>
       </Wrapper>
     </Container>
   );
