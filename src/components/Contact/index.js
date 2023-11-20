@@ -138,11 +138,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const fromName = e.target.from_name.value;
-    const fromEmail = e.target.from_email.value;
-
     emailjs
-      .sendForm("service_2kae8nq", "template_ykkmjcz", e.target)
+      .sendForm("service_2kae8nq", "template_ykkmjcz", form.current)
       .then(
         (result) => {
           console.log(result.text);
@@ -173,18 +170,14 @@ const Contact = () => {
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        <AlertWrapper>
-          <Snackbar open={open} autoHideDuration={9000} onClose={() => setOpen(false)}>
-            <Alert onClose={() => setOpen(false)} variant="filled" severity="info">
-              Your request is being sent to Navaneethan.
-            </Alert>
-          </Snackbar>
-          <Snackbar open={alertOpen} autoHideDuration={9000} onClose={handleAlertClose}>
+        <Snackbar open={open} autoHideDuration={9000} onClose={() => setOpen(false)} />
+        <Snackbar open={alertOpen} autoHideDuration={9000} onClose={handleAlertClose}>
+          <AlertWrapper>
             <Alert onClose={handleAlertClose} variant="filled" severity="info">
               Your request is being sent to Navaneethan.
             </Alert>
-          </Snackbar>
-        </AlertWrapper>
+          </AlertWrapper>
+        </Snackbar>
       </Wrapper>
     </Container>
   );
