@@ -138,8 +138,23 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Replace 'your_service_id', 'your_template_id', 'your_user_id' with your actual values
+    const serviceId = "service_2kae8nq";
+    const templateId = "template_ykkmjcz";
+    const userId = "service_2kae8nq";
+
+    // Email parameters with different from and to addresses
+    const emailParams = {
+      from_email: form.current.from_email.value,
+      to_email: "navaneethanvs18@gmail.com", // Replace with your email address
+      from_name: form.current.from_name.value,
+      subject: form.current.subject.value,
+      message: form.current.message.value,
+    };
+
     emailjs
-      .sendForm("service_2kae8nq", "template_ykkmjcz", form.current)
+      .sendForm(serviceId, templateId, form.current, userId, emailParams)
       .then(
         (result) => {
           console.log(result.text);
