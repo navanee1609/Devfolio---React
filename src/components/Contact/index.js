@@ -123,7 +123,7 @@ const AlertWrapper = styled.div`
     background-color: white !important;
     color: green !important;
     margin-top: -50px;
-    z-index:1000;
+    z-index: 1000;
   }
 
   .MuiSvgIcon-root {
