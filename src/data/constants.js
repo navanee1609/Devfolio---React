@@ -9,7 +9,7 @@ export const Bio = {
     "Experienced React Front-end Developer with a robust project portfolio, showcasing expertise in crafting visually appealing web applications. Passionate about staying updated on the latest frontend technologies, I am a collaborative team player committed to delivering high-quality solutions. Eager to contribute creativity to dynamic development teams and bring innovative ideas to life.",
   github: "https://github.com/navanee1609",
   resume:
-    "https://drive.google.com/file/d/1y5cStIkHzDoAs6IOPDnjjmI5dW8MnqnO/view?usp=drive_link",
+    "https://drive.google.com/file/d/1n58XskPWXeFScwLnvuNuvKL2rrZg8aIu/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/navaneethan-k-v-546a9025b/",
   email: "mailto:navaneethanvs18@gmail.com",
   insta: "https://www.instagram.com/navneethkrishna_05/",
