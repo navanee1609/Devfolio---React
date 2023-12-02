@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
-import emailjs from 'emailjs-com';
 import { Snackbar, Alert } from '@mui/material';
 
 const Container = styled.div`
@@ -116,6 +115,7 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
 `;
 
 const AlertWrapper = styled.div`
@@ -136,25 +136,6 @@ const Contact = () => {
   const [alertOpen, setAlertOpen] = useState(false);
   const form = useRef();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data:", form.current);
-
-    emailjs
-      .sendForm("service_2kae8nq", "template_ykkmjcz", form.current)
-      .then(
-        (result) => {
-          console.log("EmailJS Result:", result.text);
-          setOpen(true);
-          setAlertOpen(true);
-          form.current.reset();
-        },
-        (error) => {
-          console.log("EmailJS Error:", error.text);
-        }
-      );
-  };
-
   const handleAlertClose = () => {
     setAlertOpen(false);
   };
@@ -164,10 +145,10 @@ const Contact = () => {
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
+        <ContactForm ref={form} action="https://formspree.io/f/xoqoobwe" method="POST">
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
+          <ContactInput placeholder="Your Email" name="_replyto" />
+          <ContactInput placeholder="Your Name" name="name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
