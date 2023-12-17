@@ -157,6 +157,7 @@ export const projects = [
     image:
       "https://user-images.githubusercontent.com/120004894/267870549-dd299367-f8f4-42d9-b0ca-64a279ddb800.png",
     tags: [
+      
      "HTML",
      "CSS",
      
