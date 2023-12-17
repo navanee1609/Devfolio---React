@@ -179,23 +179,21 @@ export const projects = [
     webapp: "https://blooger-blogs.netlify.app/"
    
   },
-  // {
-  //   id: 1,
-  //   title: "Note Keeper - CRUD Operations in JavaScript",
-  //   date: "2023",
-  //   description:
-  //   "Note Keeper project is a beginner-level JavaScript application that showcases my ability to implement Create, Read, Update, and Delete (CRUD) operations. Users can effortlessly add, view, edit, and delete notes, with the entire functionality driven by JavaScript. CSS styling ensures a visually appealing and user-friendly interface, making this a practical demonstration of my developing JavaScript skills. You can experience the live project here.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/120004894/279388670-f918259f-9ee7-4b79-a54b-0367e5d46d9e.png",
-  //   tags: [
-  //     "HTML",
-  //     "CSS",
-  //     "Javascript"
-  //   ],
-  //   category: "web app",
-  //   github: "https://github.com/navanee1609/Notekeeper",
-  //   webapp: "https://notekeeper-dailynotes.netlify.app/",
-  // },
+  {
+    id: 1,
+    title: "Movix - Immerse Yourself in Cinematic Bliss!",
+    date: "2023",
+    description:
+    "Welcome to Movix, where the magic of movies comes to life on your screen! As a movie viewing app designed for enthusiasts like you, Movix brings an unparalleled cinematic experience to your fingertips. Explore a vast library of films spanning genres from action and adventure to drama and romance. With user-friendly navigation and high-quality streaming, Movix ensures that every movie night is a journey into captivating storytelling and stunning visuals. Elevate your movie-watching experience with Movix - Your Gateway to Cinematic Excellence!",
+    image:
+      "https://github.com/navanee1609/movix/assets/120004894/10b4f51b-62b4-49d2-aa62-a270e98c24f6",
+    tags: [
+      "React","React-Redux"
+    ],
+    category: "website",
+    github: "https://github.com/navanee1609/movix",
+    webapp: "https://movix-watch.netlify.app/",
+  },
   {
     id: 2,
     title: "Cook.io - Online Recipe App",
