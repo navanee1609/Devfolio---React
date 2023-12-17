@@ -157,7 +157,7 @@ export const projects = [
     image:
       "https://user-images.githubusercontent.com/120004894/267870549-dd299367-f8f4-42d9-b0ca-64a279ddb800.png",
     tags: [
-      
+
      "HTML",
      "CSS",
      
@@ -189,7 +189,7 @@ export const projects = [
     image:
       "https://github.com/navanee1609/movix/assets/120004894/10b4f51b-62b4-49d2-aa62-a270e98c24f6",
     tags: [
-      "React","React-Redux"
+      "React","React-Redux", "SASS"
     ],
     category: "website",
     github: "https://github.com/navanee1609/movix",
