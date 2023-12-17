@@ -180,21 +180,7 @@ export const projects = [
     webapp: "https://blooger-blogs.netlify.app/"
    
   },
-  {
-    id: 1,
-    title: "Movix - Immerse Yourself in Cinematic Bliss!",
-    date: "2023",
-    description:
-    "Welcome to Movix, where the magic of movies comes to life on your screen! As a movie viewing app designed for enthusiasts like you, Movix brings an unparalleled cinematic experience to your fingertips. Explore a vast library of films spanning genres from action and adventure to drama and romance. With user-friendly navigation and high-quality streaming, Movix ensures that every movie night is a journey into captivating storytelling and stunning visuals. Elevate your movie-watching experience with Movix - Your Gateway to Cinematic Excellence!",
-    image:
-      "https://github.com/navanee1609/movix/assets/120004894/10b4f51b-62b4-49d2-aa62-a270e98c24f6",
-    tags: [
-      "React","React-Redux", "SASS"
-    ],
-    category: "website",
-    github: "https://github.com/navanee1609/movix",
-    webapp: "https://movix-watch.netlify.app/",
-  },
+  
   {
     id: 2,
     title: "Cook.io - Online Recipe App",
@@ -265,6 +251,20 @@ export const projects = [
     github: "https://github.com/navanee1609/gpt3",
     webapp: "https://gpt3-openai-react.netlify.app/",
   },
+ 
+  {
+    id: 7,
+    title: "Rent-car Service - React.js Car Rental Project",
+    date: "2023",
+    description:
+      "The Car-Rent Service is a dynamic car rental project developed using React.js, designed to provide a user-friendly platform for renting vehicles. This application enables users to browse a catalog of available cars, select rental dates, and make reservations. It also includes features such as user authentication, pricing calculators, and interactive maps to locate rental stations. The responsive and efficient nature of React.js ensures a seamless user experience, making the process of renting a car both straightforward and convenient. This project showcases my ability to create a modern, functional, and visually appealing web application for car rental services.",
+    image:
+      "https://user-images.githubusercontent.com/120004894/279395393-5c9e79c1-0991-4d6e-91d2-88f846f3206f.png",
+    tags: ["React Js"],
+    category: "web app",
+    github: "https://github.com/navanee1609/car-rent",
+    webapp: "https://rent-car-react.netlify.app/",
+  },
   {
     id: 6,
     title: "Shop Cart - Where Every Click Unveils a Seamless Shopping Experience. ",
@@ -279,17 +279,19 @@ export const projects = [
     webapp: "https://shopcart-ecommerce-project.netlify.app/",
   },
   {
-    id: 7,
-    title: "Rent-car Service - React.js Car Rental Project",
+    id: 1,
+    title: "Movix - Immerse Yourself in Cinematic Bliss!",
     date: "2023",
     description:
-      "The Car-Rent Service is a dynamic car rental project developed using React.js, designed to provide a user-friendly platform for renting vehicles. This application enables users to browse a catalog of available cars, select rental dates, and make reservations. It also includes features such as user authentication, pricing calculators, and interactive maps to locate rental stations. The responsive and efficient nature of React.js ensures a seamless user experience, making the process of renting a car both straightforward and convenient. This project showcases my ability to create a modern, functional, and visually appealing web application for car rental services.",
+    "Welcome to Movix, where the magic of movies comes to life on your screen! As a movie viewing app designed for enthusiasts like you, Movix brings an unparalleled cinematic experience to your fingertips. Explore a vast library of films spanning genres from action and adventure to drama and romance. With user-friendly navigation and high-quality streaming, Movix ensures that every movie night is a journey into captivating storytelling and stunning visuals. Elevate your movie-watching experience with Movix - Your Gateway to Cinematic Excellence!",
     image:
-      "https://user-images.githubusercontent.com/120004894/279395393-5c9e79c1-0991-4d6e-91d2-88f846f3206f.png",
-    tags: ["React Js"],
-    category: "web app",
-    github: "https://github.com/navanee1609/car-rent",
-    webapp: "https://rent-car-react.netlify.app/",
+      "https://github.com/navanee1609/movix/assets/120004894/10b4f51b-62b4-49d2-aa62-a270e98c24f6",
+    tags: [
+      "React","React-Redux", "SASS"
+    ],
+    category: "website",
+    github: "https://github.com/navanee1609/movix",
+    webapp: "https://movix-watch.netlify.app/",
   },
 
 
