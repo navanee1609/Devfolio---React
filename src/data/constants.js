@@ -189,7 +189,7 @@ export const projects = [
       "Cook.io is an impressive showcase of my HTML, CSS, and JavaScript skills, enriched by the integration of the Edamam API. This project offers a user-friendly platform for recipe discovery, empowering users to search, explore, and interact with a vast array of culinary ideas. It boasts features like filtering, sorting, saving favorites, and creating shopping lists. Its responsive design ensures compatibility with a range of devices. The utilization of the Edamam API enhances the app's capabilities. Throughout development, I successfully addressed challenges related to API integration, making this project a testament to my evolving web development skills. As my journey continues, I look forward to further enhancing the app by adding user accounts and additional functionalities. Explore the live project here to see it in action.",
     image:
       "https://user-images.githubusercontent.com/120004894/279390357-2ca33d8e-6164-47b5-849e-c8dd60fc7dc1.png",
-    tags: ["HTML","CSS","JavaScript"],
+    tags: ["HTML","CSS","JavaScript", "Edamam API"],
     category: "web app",
     github: "https://github.com/navanee1609/cook.io",
     webapp: "https://cookio-recipehub.netlify.app/",
