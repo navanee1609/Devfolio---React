@@ -294,6 +294,21 @@ export const projects = [
     webapp: "https://movix-watch.netlify.app/",
   },
 
+  {
+    id: 1,
+    title: "Retrotift - Where Gaming Nostalgia Meets Modern Excitement!",
+    date: "2023",
+    description:
+    "Retrotift, showcased in my portfolio, is a dynamic gaming platform uniting a diverse game library, global community engagement, and exclusive content. Seamlessly blending nostalgia with modern gaming trends, Retrotift offers a user-friendly interface and hosts live events. Explore the convergence of gaming culture at Retrotift—your ultimate gaming destination",
+    image:
+      "https://github.com/navanee1609/RETRORIFT/assets/120004894/998426a6-233b-4b78-becd-161d1410a320",
+    tags: [
+      "React","React-Redux", "SASS", "RAWG.API"
+    ],
+    category: "website",
+    github: "https://github.com/navanee1609/RETRORIFT",
+    webapp: "https://retrorift-gaming-paradise.netlify.app/",
+  },
 
 ];
 
