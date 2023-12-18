@@ -287,7 +287,7 @@ export const projects = [
     image:
       "https://github.com/navanee1609/movix/assets/120004894/10b4f51b-62b4-49d2-aa62-a270e98c24f6",
     tags: [
-      "React","React-Redux", "SASS"
+      "React","React-Redux", "SASS", "TMDB API - Axios"
     ],
     category: "website",
     github: "https://github.com/navanee1609/movix",
@@ -299,11 +299,11 @@ export const projects = [
     title: "Retrotift - Where Gaming Nostalgia Meets Modern Excitement!",
     date: "2023",
     description:
-    "Retrotift, showcased in my portfolio, is a dynamic gaming platform uniting a diverse game library, global community engagement, and exclusive content. Seamlessly blending nostalgia with modern gaming trends, Retrotift offers a user-friendly interface and hosts live events. Explore the convergence of gaming culture at Retrotift—your ultimate gaming destination",
+    "RetroRift, showcased in my portfolio, is a dynamic gaming platform uniting a diverse game library, global community engagement, and exclusive content. Seamlessly blending nostalgia with modern gaming trends, RetroRift offers a user-friendly interface and hosts live events. Explore the convergence of gaming culture at RetroRift—your ultimate gaming destination",
     image:
       "https://github.com/navanee1609/RETRORIFT/assets/120004894/998426a6-233b-4b78-becd-161d1410a320",
     tags: [
-      "React","React-Redux", "SASS", "RAWG.API"
+      "React","React-Redux", "SASS", "RAWG.API - Axios"
     ],
     category: "website",
     github: "https://github.com/navanee1609/RETRORIFT",
