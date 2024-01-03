@@ -61,11 +61,11 @@ export const skills = [
   {
     title: "Others",
     skills: [
-      // {
-      //   name: "Git",
-      //   image:
-      //     "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
-      // },
+      {
+        name: "Git",
+        image:
+          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+      },
       {
         name: "GitHub",
         image:
@@ -81,6 +81,9 @@ export const skills = [
         name: "VS Code",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+      },
+      {
+
       }
       
     ],
