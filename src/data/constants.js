@@ -279,37 +279,37 @@ export const projects = [
     github: "https://github.com/navanee1609/ShopCart",
     webapp: "https://shopcart-ecommerce-project.netlify.app/",
   },
-  {
-    id: 1,
-    title: "Movix - Immerse Yourself in Cinematic Bliss!",
-    date: "2023",
-    description:
-    "Welcome to Movix, where the magic of movies comes to life on your screen! As a movie viewing app designed for enthusiasts like you, Movix brings an unparalleled cinematic experience to your fingertips. Explore a vast library of films spanning genres from action and adventure to drama and romance. With user-friendly navigation and high-quality streaming, Movix ensures that every movie night is a journey into captivating storytelling and stunning visuals. Elevate your movie-watching experience with Movix - Your Gateway to Cinematic Excellence!",
-    image:
-      "https://github.com/navanee1609/movix/assets/120004894/10b4f51b-62b4-49d2-aa62-a270e98c24f6",
-    tags: [
-      "React","React-Redux", "SASS", "TMDB API - Axios"
-    ],
-    category: "website",
-    github: "https://github.com/navanee1609/movix",
-    webapp: "https://movix-watch.netlify.app/",
-  },
+  // {
+  //   id: 1,
+  //   title: "Movix - Immerse Yourself in Cinematic Bliss!",
+  //   date: "2023",
+  //   description:
+  //   "Welcome to Movix, where the magic of movies comes to life on your screen! As a movie viewing app designed for enthusiasts like you, Movix brings an unparalleled cinematic experience to your fingertips. Explore a vast library of films spanning genres from action and adventure to drama and romance. With user-friendly navigation and high-quality streaming, Movix ensures that every movie night is a journey into captivating storytelling and stunning visuals. Elevate your movie-watching experience with Movix - Your Gateway to Cinematic Excellence!",
+  //   image:
+  //     "https://github.com/navanee1609/movix/assets/120004894/10b4f51b-62b4-49d2-aa62-a270e98c24f6",
+  //   tags: [
+  //     "React","React-Redux", "SASS", "TMDB API - Axios"
+  //   ],
+  //   category: "website",
+  //   github: "https://github.com/navanee1609/movix",
+  //   webapp: "https://movix-watch.netlify.app/",
+  // },
 
-  {
-    id: 1,
-    title: "Retrotift - Where Gaming Nostalgia Meets Modern Excitement!",
-    date: "2023",
-    description:
-    "RetroRift, showcased in my portfolio, is a dynamic gaming platform uniting a diverse game library, global community engagement, and exclusive content. Seamlessly blending nostalgia with modern gaming trends, RetroRift offers a user-friendly interface and hosts live events. Explore the convergence of gaming culture at RetroRift—your ultimate gaming destination",
-    image:
-      "https://github.com/navanee1609/RETRORIFT/assets/120004894/998426a6-233b-4b78-becd-161d1410a320",
-    tags: [
-      "React","React-Redux", "SASS", "RAWG.API - Axios"
-    ],
-    category: "website",
-    github: "https://github.com/navanee1609/RETRORIFT",
-    webapp: "https://retrorift-gaming-paradise.netlify.app/",
-  },
+  // {
+  //   id: 1,
+  //   title: "Retrotift - Where Gaming Nostalgia Meets Modern Excitement!",
+  //   date: "2023",
+  //   description:
+  //   "RetroRift, showcased in my portfolio, is a dynamic gaming platform uniting a diverse game library, global community engagement, and exclusive content. Seamlessly blending nostalgia with modern gaming trends, RetroRift offers a user-friendly interface and hosts live events. Explore the convergence of gaming culture at RetroRift—your ultimate gaming destination",
+  //   image:
+  //     "https://github.com/navanee1609/RETRORIFT/assets/120004894/998426a6-233b-4b78-becd-161d1410a320",
+  //   tags: [
+  //     "React","React-Redux", "SASS", "RAWG.API - Axios"
+  //   ],
+  //   category: "website",
+  //   github: "https://github.com/navanee1609/RETRORIFT",
+  //   webapp: "https://retrorift-gaming-paradise.netlify.app/",
+  // },
 
 ];
 
