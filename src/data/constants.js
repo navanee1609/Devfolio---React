@@ -282,7 +282,7 @@ export const projects = [
   {
     id: 1,
     title: "Movix - Immerse Yourself in Cinematic Bliss!",
-    date: "2023",
+    date: "2024",
     description:
     "Welcome to Movix, where the magic of movies comes to life on your screen! As a movie viewing app designed for enthusiasts like you, Movix brings an unparalleled cinematic experience to your fingertips. Explore a vast library of films spanning genres from action and adventure to drama and romance. With user-friendly navigation and high-quality streaming, Movix ensures that every movie night is a journey into captivating storytelling and stunning visuals. Elevate your movie-watching experience with Movix - Your Gateway to Cinematic Excellence!",
     image:
@@ -298,7 +298,7 @@ export const projects = [
   {
     id: 1,
     title: "Retrotift - Where Gaming Nostalgia Meets Modern Excitement!",
-    date: "2023",
+    date: "2024",
     description:
     "RetroRift, showcased in my portfolio, is a dynamic gaming platform uniting a diverse game library, global community engagement, and exclusive content. Seamlessly blending nostalgia with modern gaming trends, RetroRift offers a user-friendly interface and hosts live events. Explore the convergence of gaming culture at RetroRift—your ultimate gaming destination",
     image:
