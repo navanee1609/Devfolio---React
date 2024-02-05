@@ -64,7 +64,7 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://images.app.goo.gl/o3efBXyDQ4VMs2vZ7",
+          "https://seeklogo.com/images/G/git-logo-CD8D6F1C09-seeklogo.com.png",
       },
       {
         name: "GitHub",
