@@ -9,7 +9,7 @@ export const Bio = {
     "Experienced React Front-end Developer with a robust project portfolio, showcasing expertise in crafting visually appealing web applications. Passionate about staying updated on the latest frontend technologies, I am a collaborative team player committed to delivering high-quality solutions. Eager to contribute creativity to dynamic development teams and bring innovative ideas to life.",
   github: "https://github.com/navanee1609",
   resume:
-    "https://drive.google.com/file/d/1FGEHh09Bz9O1ItWm4kWru6RkJ6iWxW29/view?usp=sharing",
+    "https://drive.google.com/file/d/1Qd8cFOhMg41pVCECXCUp799tIn5_MHB6/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/navaneethan-k-v-546a9025b/",
   email: "mailto:navaneethanvs18@gmail.com",
   insta: "https://www.instagram.com/navneethkrishna_05/",
@@ -64,7 +64,7 @@ export const skills = [
       {
         name: "Git",
         image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+          "https://images.app.goo.gl/o3efBXyDQ4VMs2vZ7",
       },
       {
         name: "GitHub",
@@ -124,7 +124,7 @@ export const education = [
     
     school: "Dhanalakshmi Srinivasan Enginerring College",
     date: "2018-2022",
-    grade: "8.56 CGPA",
+    grade: "8.46 CGPA",
     desc: "As a mechanical engineering graduate, I possess strong problem-solving and precision skills. Combining this foundation with my passion for technology, I'm venturing into IT. My college experience has equipped me to bridge the worlds of engineering and IT, applying efficiency and innovation to both realms, making me a versatile professional.",
     degree: "Bachelor of Engineering - BE, Mechanical Engineering",
   },
@@ -288,7 +288,7 @@ export const projects = [
     image:
       "https://github.com/navanee1609/movix/assets/120004894/10b4f51b-62b4-49d2-aa62-a270e98c24f6",
     tags: [
-      "React","React-Redux", "SASS", "TMDB API - Axios"
+      "React","React-Redux", "TMDB API - Axios"
     ],
     category: "website",
     github: "https://github.com/navanee1609/movix",
@@ -304,7 +304,7 @@ export const projects = [
     image:
       "https://github.com/navanee1609/RETRORIFT/assets/120004894/998426a6-233b-4b78-becd-161d1410a320",
     tags: [
-      "React","React-Redux", "SASS", "RAWG.API - Axios"
+      "React","React-Redux", "RAWG.API - Axios"
     ],
     category: "website",
     github: "https://github.com/navanee1609/RETRORIFT",
