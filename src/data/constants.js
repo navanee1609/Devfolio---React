@@ -6,7 +6,7 @@ export const Bio = {
     "Web Developer"
   ],
   description:
-    "Experienced React Front-end Developer with a robust project portfolio, showcasing expertise in crafting visually appealing web applications. Passionate about staying updated on the latest frontend technologies, I am a collaborative team player committed to delivering high-quality solutions. Eager to contribute creativity to dynamic development teams and bring innovative ideas to life.",
+    "A skilled React developer with a strong portfolio, passionate about staying updated on frontend tech. Collaborative and committed to quality, you thrive in dynamic teams. Eager to contribute creativity and bring innovative ideas to life.",
   github: "https://github.com/navanee1609",
   resume:
     "https://drive.google.com/file/d/1Qd8cFOhMg41pVCECXCUp799tIn5_MHB6/view?usp=sharing",
