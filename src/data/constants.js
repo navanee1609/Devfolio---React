@@ -69,7 +69,8 @@ export const skills = [
       {
         name: "GitHub",
         image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+          // "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+          "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
       },
       
       {
