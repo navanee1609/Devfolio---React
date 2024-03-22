@@ -1,8 +1,10 @@
+import React from 'react';
 import styled from 'styled-components';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Bio } from '../../data/constants';
 
 const FooterContainer = styled.div`
@@ -10,9 +12,7 @@ const FooterContainer = styled.div`
   padding: 2rem 0;
   display: flex;
   justify-content: center;
-  //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
 `;
-
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -49,7 +49,7 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
-color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.2s ease-in-out;
@@ -84,7 +84,14 @@ const Copyright = styled.p`
   text-align: center;
 `;
 
-function Footer() {
+const YourComponent = () => {
+  const whatsappNumber = "7639096688"; 
+  const handleWhatsAppClick = () => {
+    const message = "Hello, I'm contacting you from your website.";
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.location.href = whatsappLink;
+  };
+
   return (
     <FooterContainer>
       <FooterWrapper>
@@ -101,14 +108,16 @@ function Footer() {
           <SocialMediaIcon href={Bio.email} target="display"><MailIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="#" target="display" onClick={handleWhatsAppClick}>
+            <WhatsAppIcon />
+          </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-        Elevating the Digital Experience !
+          Elevating the Digital Experience !
         </Copyright>
-
       </FooterWrapper>
     </FooterContainer>
   );
-}
+};
 
-export default Footer;
+export default YourComponent;

@@ -14,6 +14,7 @@ export const Bio = {
   email: "mailto:navaneethanvs18@gmail.com",
   insta: "https://www.instagram.com/navneethkrishna_05/",
   phone: "tel:+6380939303",
+  whatsapp:6380939303
   
 };
 
