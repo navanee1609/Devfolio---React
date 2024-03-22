@@ -85,10 +85,10 @@ const Copyright = styled.p`
 `;
 
 const YourComponent = () => {
-  const whatsappNumber = "7639096688"; 
+  const yourWhatsAppNumber = "7639096688"; // Replace with your WhatsApp number
   const handleWhatsAppClick = () => {
-    const message = "Hello, I'm contacting you from your website.";
-    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    const defaultMessage = "Hi there! I'm interested in learning more about your offerings.";
+    const whatsappLink = `https://wa.me/${yourWhatsAppNumber}?text=${encodeURIComponent(defaultMessage)}`;
     window.location.href = whatsappLink;
   };
 
