@@ -41,6 +41,7 @@ const ScrollIndicatorWrapper = styled.div`
   cursor: pointer;
   transition: opacity 0.3s ease;
   opacity: ${({ visible }) => (visible ? "1" : "0")};
+  z-index: 9999;
 `
 
 const ArrowIcon = styled(FiChevronUp)`
@@ -52,13 +53,15 @@ const ArrowIcon = styled(FiChevronUp)`
 const ScrollPercentage = styled.div`
   width: 40px;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
+  color: rgb(25, 25, 36);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   font-size: 12px;
   padding: 5px;
+  font-weight: bold;
 `
 
 function App() {
