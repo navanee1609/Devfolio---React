@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
-import { useState } from "react";
-import { darkTheme, lightTheme } from './utils/Themes.js'
+import { useState, useEffect } from "react";
+import { darkTheme, lightTheme } from './utils/Themes.js';
 import Navbar from "./components/Navbar";
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -14,6 +14,7 @@ import Visionary from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
+import { FiChevronUp } from 'react-icons/fi';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -26,14 +27,77 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
+
+const ScrollIndicatorWrapper = styled.div`
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: ${({ visible }) => (visible ? "1" : "0")};
+`
+
+const ArrowIcon = styled(FiChevronUp)`
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+`
+
+const ScrollPercentage = styled.div`
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 5px;
+`
+
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal)
+  const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [scrollVisible, setScrollVisible] = useState(false);
+
+  useEffect(() => {
+    const updateScrollPercentage = () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+      const clientHeight = document.documentElement.clientHeight || window.innerHeight;
+      const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+      setScrollPercentage(scrolled);
+    };
+
+    const handleScroll = () => {
+      updateScrollPercentage();
+      const isScrollVisible = window.scrollY > 100;
+      setScrollVisible(isScrollVisible);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
-    <ThemeProvider 
-    theme={darkMode ? darkTheme : lightTheme}
-    >
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
         <Navbar />
         <Body>
@@ -51,6 +115,10 @@ function App() {
           {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           }
+          <ScrollIndicatorWrapper visible={scrollVisible} onClick={scrollToTop}>
+            <ArrowIcon />
+            <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
+          </ScrollIndicatorWrapper>
         </Body>
       </Router>
     </ThemeProvider>
