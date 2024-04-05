@@ -14,12 +14,13 @@ import Visionary from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
-import { FiChevronUp } from 'react-icons/fi';
+import { FiChevronUp, FiSun, FiMoon } from 'react-icons/fi';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
+  position: relative; /* Ensure relative positioning for child elements */
 `
 
 const Wrapper = styled.div`
@@ -30,8 +31,8 @@ const Wrapper = styled.div`
 
 const ScrollIndicatorWrapper = styled.div`
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,6 +64,25 @@ const ScrollPercentage = styled.div`
   padding: 5px;
   font-weight: bold;
 `
+
+const ThemeSwitchButton = styled.button`
+  background-color: ${({ theme }) => theme.buttonBg}; /* Set background color based on theme */
+  color: ${({ theme }) => theme.buttonText}; /* Set text color based on theme */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it's above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -99,10 +119,14 @@ function App() {
     });
   };
 
+  const toggleTheme = () => {
+    setDarkMode(prevMode => !prevMode);
+  };
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
-        <Navbar />
+        <Navbar toggleTheme={toggleTheme} />
         <Body>
           <HeroSection />
           <Wrapper>
@@ -122,6 +146,9 @@ function App() {
             <ArrowIcon />
             <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
           </ScrollIndicatorWrapper>
+          <ThemeSwitchButton onClick={toggleTheme}>
+            {darkMode ? <FiSun color="#000000" /> : <FiMoon color="#000000" />}
+          </ThemeSwitchButton>
         </Body>
       </Router>
     </ThemeProvider>
