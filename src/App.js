@@ -32,7 +32,7 @@ const Wrapper = styled.div`
 const ScrollIndicatorWrapper = styled.div`
   position: fixed;
   bottom: 10px;
-  left: 20px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,9 +146,10 @@ function App() {
             <ArrowIcon />
             <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
           </ScrollIndicatorWrapper>
-          <ThemeSwitchButton onClick={toggleTheme}>
+          {/* <ThemeSwitchButton onClick={toggleTheme}>
             {darkMode ? <FiSun color="#000000" /> : <FiMoon color="#000000" />}
-          </ThemeSwitchButton>
+          </ThemeSwitchButton> */}
+
         </Body>
       </Router>
     </ThemeProvider>
