@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 import Visionary from './components/Experience';
 import Education from './components/Education';
 import styled from 'styled-components';
-import { FiChevronUp } from 'react-icons/fi';
+import { CurrentLocation } from '@styled-icons/boxicons-regular/CurrentLocation'; // Import CurrentLocation icon from styled-icons/boxicons-regular
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -48,12 +48,6 @@ const ScrollIndicatorWrapper = styled.div`
   z-index: 9999;
 `;
 
-const ArrowIcon = styled(FiChevronUp)`
-  width: 30px;
-  height: 30px;
-  margin-bottom: 5px;
-`;
-
 const ScrollPercentage = styled.div`
   width: 40px;
   height: 40px;
@@ -73,7 +67,6 @@ function App() {
   const [openModal, setOpenModal] = useState(true); // Initially keep the modal open
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const [scrollVisible, setScrollVisible] = useState(false);
-  const [userName, setUserName] = useState('');
 
   useEffect(() => {
     const updateScrollPercentage = () => {
@@ -114,13 +107,7 @@ function App() {
     document.body.style.overflow = 'auto';
   };
 
-  const extractUserName = (email) => {
-    const atIndex = email.indexOf('@');
-    if (atIndex !== -1) {
-      return email.substring(0, atIndex);
-    }
-    return 'User';
-  };
+  
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
@@ -131,8 +118,6 @@ function App() {
             <Modal 
               isOpen={openModal} 
               closeModal={closeModal} 
-              userName={userName} 
-              extractUserName={extractUserName} 
             />
           )}
           <HeroSection />
@@ -147,7 +132,7 @@ function App() {
           </Wrapper>
           <Footer />
           <ScrollIndicatorWrapper visible={scrollVisible} onClick={scrollToTop}>
-            <ArrowIcon />
+            <CurrentLocation />
             <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
           </ScrollIndicatorWrapper>
         </Body>
