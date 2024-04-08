@@ -1,33 +1,36 @@
-import { ThemeProvider } from "styled-components";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './utils/Themes.js';
-import Navbar from "./components/Navbar";
+import Navbar from './components/Navbar';
+import Modal from './components/modal.js'; 
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import HeroSection from "./components/HeroSection";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Visionary from "./components/Experience";
-import Education from "./components/Education";
-import ProjectDetails from "./components/ProjectDetails";
-import styled from "styled-components";
-import { FiChevronUp, FiSun, FiMoon } from 'react-icons/fi';
+import HeroSection from './components/HeroSection';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Visionary from './components/Experience';
+import Education from './components/Education';
+import styled from 'styled-components';
+import { FiChevronUp } from 'react-icons/fi';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
-  position: relative; /* Ensure relative positioning for child elements */
-`
+  position: relative;
+  ${({ modalOpen }) => modalOpen && `
+    height: 100vh;
+    overflow: hidden;
+  `}
+`;
 
 const Wrapper = styled.div`
   background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
-`
+`;
 
 const ScrollIndicatorWrapper = styled.div`
   position: fixed;
@@ -43,13 +46,13 @@ const ScrollIndicatorWrapper = styled.div`
   transition: opacity 0.3s ease;
   opacity: ${({ visible }) => (visible ? "1" : "0")};
   z-index: 9999;
-`
+`;
 
 const ArrowIcon = styled(FiChevronUp)`
   width: 30px;
   height: 30px;
   margin-bottom: 5px;
-`
+`;
 
 const ScrollPercentage = styled.div`
   width: 40px;
@@ -63,32 +66,14 @@ const ScrollPercentage = styled.div`
   font-size: 12px;
   padding: 5px;
   font-weight: bold;
-`
-
-const ThemeSwitchButton = styled.button`
-  background-color: ${({ theme }) => theme.buttonBg}; /* Set background color based on theme */
-  color: ${({ theme }) => theme.buttonText}; /* Set text color based on theme */
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  text-align: center;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  z-index: 1000; /* Ensure it's above other content */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
+  const [openModal, setOpenModal] = useState(true); // Initially keep the modal open
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const [scrollVisible, setScrollVisible] = useState(false);
+  const [userName, setUserName] = useState('');
 
   useEffect(() => {
     const updateScrollPercentage = () => {
@@ -123,33 +108,48 @@ function App() {
     setDarkMode(prevMode => !prevMode);
   };
 
+  const closeModal = () => {
+    setOpenModal(false);
+    // Enable scrolling when the modal is closed
+    document.body.style.overflow = 'auto';
+  };
+
+  const extractUserName = (email) => {
+    const atIndex = email.indexOf('@');
+    if (atIndex !== -1) {
+      return email.substring(0, atIndex);
+    }
+    return 'User';
+  };
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Router >
+      <Router>
         <Navbar toggleTheme={toggleTheme} />
-        <Body>
+        <Body modalOpen={openModal}>
+          {openModal && (
+            <Modal 
+              isOpen={openModal} 
+              closeModal={closeModal} 
+              userName={userName} 
+              extractUserName={extractUserName} 
+            />
+          )}
           <HeroSection />
           <Wrapper>
             <Skills />
             <Visionary />
           </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Projects />
           <Wrapper>
             <Education />
             <Contact />
           </Wrapper>
           <Footer />
-          {openModal.state &&
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          }
           <ScrollIndicatorWrapper visible={scrollVisible} onClick={scrollToTop}>
             <ArrowIcon />
             <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
           </ScrollIndicatorWrapper>
-          {/* <ThemeSwitchButton onClick={toggleTheme}>
-            {darkMode ? <FiSun color="#000000" /> : <FiMoon color="#000000" />}
-          </ThemeSwitchButton> */}
-
         </Body>
       </Router>
     </ThemeProvider>
