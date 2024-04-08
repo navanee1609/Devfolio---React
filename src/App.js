@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './utils/Themes.js';
 import Navbar from './components/Navbar';
@@ -13,7 +13,8 @@ import Footer from './components/Footer';
 import Visionary from './components/Experience';
 import Education from './components/Education';
 import styled from 'styled-components';
-import { CurrentLocation } from '@styled-icons/boxicons-regular/CurrentLocation'; // Import CurrentLocation icon from styled-icons/boxicons-regular
+import { FiChevronUp } from 'react-icons/fi';
+import { LuMousePointer2 } from "react-icons/lu";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -48,6 +49,19 @@ const ScrollIndicatorWrapper = styled.div`
   z-index: 9999;
 `;
 
+const CustomMousePointer = styled(LuMousePointer2)`
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.5; /* Adjust opacity as needed */
+`;
+
+const ArrowIcon = styled(FiChevronUp)`
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+`;
+
 const ScrollPercentage = styled.div`
   width: 40px;
   height: 40px;
@@ -63,10 +77,10 @@ const ScrollPercentage = styled.div`
 `;
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
-  const [openModal, setOpenModal] = useState(true); // Initially keep the modal open
-  const [scrollPercentage, setScrollPercentage] = useState(0);
-  const [scrollVisible, setScrollVisible] = useState(false);
+  const [darkMode, setDarkMode] = React.useState(true);
+  const [openModal, setOpenModal] = React.useState(true); // Initially keep the modal open
+  const [scrollPercentage, setScrollPercentage] = React.useState(0);
+  const [scrollVisible, setScrollVisible] = React.useState(false);
 
   useEffect(() => {
     const updateScrollPercentage = () => {
@@ -107,8 +121,6 @@ function App() {
     document.body.style.overflow = 'auto';
   };
 
-  
-
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>
@@ -132,7 +144,7 @@ function App() {
           </Wrapper>
           <Footer />
           <ScrollIndicatorWrapper visible={scrollVisible} onClick={scrollToTop}>
-            <CurrentLocation />
+            <CustomMousePointer />
             <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
           </ScrollIndicatorWrapper>
         </Body>
