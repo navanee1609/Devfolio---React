@@ -24,10 +24,11 @@ const ModalWrapper = styled.div`
   padding: 20px;
   border-radius: 10px;
   z-index: 1000;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Added background-color transition */
 
   &:hover {
     transform: translate(-50%, -50%) scale(1.02);
+    background-color: #19212C; /* Change to the desired hovering background color */
   }
 `;
 

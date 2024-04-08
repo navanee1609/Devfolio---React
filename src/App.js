@@ -14,7 +14,7 @@ import Visionary from './components/Experience';
 import Education from './components/Education';
 import styled from 'styled-components';
 import { FiChevronUp } from 'react-icons/fi';
-import { LuMousePointer2 } from "react-icons/lu";
+import { MdTouchApp } from 'react-icons/md'; // Importing touch app icon from react-icons
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -49,7 +49,7 @@ const ScrollIndicatorWrapper = styled.div`
   z-index: 9999;
 `;
 
-const CustomMousePointer = styled(LuMousePointer2)`
+const CustomMousePointer = styled(MdTouchApp)`
   position: absolute;
   pointer-events: none;
   z-index: 9999;
