@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { darkTheme, lightTheme } from './utils/Themes.js';
 import Navbar from './components/Navbar';
 import Modal from './components/modal.js'; 
@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Visionary from './components/Experience';
 import Education from './components/Education';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import { TouchApp as MdTouchApp } from '@mui/icons-material'; // Importing touch app icon from MUI
 import GpsFixedSharpIcon from '@mui/icons-material/GpsFixedSharp'; // Importing GpsFixedSharp icon from MUI
 import RadarSharpIcon from '@mui/icons-material/RadarSharp'; // Importing RadarSharp icon from MUI
