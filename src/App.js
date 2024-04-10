@@ -12,9 +12,16 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Visionary from './components/Experience';
 import Education from './components/Education';
-import styled from 'styled-components';
-import { FiChevronUp } from 'react-icons/fi';
-import { MdTouchApp } from 'react-icons/md'; // Importing touch app icon from react-icons
+import styled, { createGlobalStyle } from 'styled-components';
+import { TouchApp as MdTouchApp } from '@mui/icons-material'; // Importing touch app icon from MUI
+import GpsFixedSharpIcon from '@mui/icons-material/GpsFixedSharp'; // Importing GpsFixedSharp icon from MUI
+import RadarSharpIcon from '@mui/icons-material/RadarSharp'; // Importing RadarSharp icon from MUI
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    cursor: url(${RadarSharpIcon}), auto;
+  }
+`;
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -49,17 +56,11 @@ const ScrollIndicatorWrapper = styled.div`
   z-index: 9999;
 `;
 
-const CustomMousePointer = styled(MdTouchApp)`
-  position: absolute;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.5; /* Adjust opacity as needed */
-`;
-
-const ArrowIcon = styled(FiChevronUp)`
+const ArrowIcon = styled(GpsFixedSharpIcon)`
   width: 30px;
   height: 30px;
   margin-bottom: 5px;
+  cursor: pointer; /* Add cursor pointer to indicate clickable */
 `;
 
 const ScrollPercentage = styled.div`
@@ -123,6 +124,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <GlobalStyle />
       <Router>
         <Navbar toggleTheme={toggleTheme} />
         <Body modalOpen={openModal}>
@@ -144,7 +146,7 @@ function App() {
           </Wrapper>
           <Footer />
           <ScrollIndicatorWrapper visible={scrollVisible} onClick={scrollToTop}>
-            <CustomMousePointer />
+            <ArrowIcon onClick={scrollToTop} />
             <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
           </ScrollIndicatorWrapper>
         </Body>
