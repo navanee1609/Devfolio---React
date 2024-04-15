@@ -6,6 +6,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import GitHubIcon from '@mui/icons-material/GitHub'; // Import GitHub Icon
 import { Bio } from '../../data/constants';
 
 // Styled custom Tooltip
@@ -141,6 +142,12 @@ const YourComponent = () => {
           <CustomTooltip title="WhatsApp" arrow>
             <SocialMediaIcon href="#" target="display" onClick={handleWhatsAppClick}>
               <WhatsAppIcon />
+            </SocialMediaIcon>
+          </CustomTooltip>
+          {/* GitHub Icon with Custom Tooltip */}
+          <CustomTooltip title="GitHub" arrow>
+            <SocialMediaIcon href="https://github.com/navanee1609" target="_blank">
+              <GitHubIcon />
             </SocialMediaIcon>
           </CustomTooltip>
         </SocialMediaIcons>
