@@ -1,11 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import Tooltip from '@mui/material/Tooltip';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Bio } from '../../data/constants';
+
+// Styled custom Tooltip
+const CustomTooltip = styled(Tooltip)`
+  && {
+    font-size: 1.6rem;
+    padding: 4px 8px;
+  }
+`;
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -104,16 +113,39 @@ const YourComponent = () => {
           <NavLink href="#education">Education</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.phone} target="display"><PhoneIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.email} target="display"><MailIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
-          <SocialMediaIcon href="#" target="display" onClick={handleWhatsAppClick}>
-            <WhatsAppIcon />
-          </SocialMediaIcon>
+          {/* Phone Icon with Custom Tooltip */}
+          <CustomTooltip title="Phone" arrow>
+            <SocialMediaIcon href={Bio.phone} target="display">
+              <PhoneIcon />
+            </SocialMediaIcon>
+          </CustomTooltip>
+          {/* Email Icon with Custom Tooltip */}
+          <CustomTooltip title="Email" arrow>
+            <SocialMediaIcon href={Bio.email} target="display">
+              <MailIcon />
+            </SocialMediaIcon>
+          </CustomTooltip>
+          {/* LinkedIn Icon with Custom Tooltip */}
+          <CustomTooltip title="LinkedIn" arrow>
+            <SocialMediaIcon href={Bio.linkedin} target="display">
+              <LinkedInIcon />
+            </SocialMediaIcon>
+          </CustomTooltip>
+          {/* Instagram Icon with Custom Tooltip */}
+          <CustomTooltip title="Instagram" arrow>
+            <SocialMediaIcon href={Bio.insta} target="display">
+              <InstagramIcon />
+            </SocialMediaIcon>
+          </CustomTooltip>
+          {/* WhatsApp Icon with Custom Tooltip */}
+          <CustomTooltip title="WhatsApp" arrow>
+            <SocialMediaIcon href="#" target="display" onClick={handleWhatsAppClick}>
+              <WhatsAppIcon />
+            </SocialMediaIcon>
+          </CustomTooltip>
         </SocialMediaIcons>
         <Copyright>
-          Elevating the Digital Experience !
+          Elevating the Digital Experience!
         </Copyright>
       </FooterWrapper>
     </FooterContainer>
