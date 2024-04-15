@@ -192,7 +192,7 @@ const Modal = ({ isOpen, closeModal }) => {
               <IconWrapper><LinkedInIcon /></IconWrapper>
               <LinkedInTooltip>Navaneethan</LinkedInTooltip>
             </LinkedInLink>
-            <PhoneLink href="tel:+6380939303">
+            <PhoneLink href="tel:+916380939303">
               <IconWrapper><MobileFriendlyIcon /></IconWrapper>
               <PhoneTooltip>Contact Me</PhoneTooltip>
             </PhoneLink>
