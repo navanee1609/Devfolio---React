@@ -14,19 +14,19 @@ import Visionary from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
-import { FiChevronUp } from 'react-icons/fi';
+import { FaArrowCircleUp } from 'react-icons/fa'; // Importing the new icon
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
-`
+`;
 
 const Wrapper = styled.div`
   background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
-`
+`;
 
 const ScrollIndicatorWrapper = styled.div`
   position: fixed;
@@ -42,13 +42,13 @@ const ScrollIndicatorWrapper = styled.div`
   transition: opacity 0.3s ease;
   opacity: ${({ visible }) => (visible ? "1" : "0")};
   z-index: 9999;
-`
+`;
 
-const ArrowIcon = styled(FiChevronUp)`
-  width: 30px;
-  height: 30px;
+const ArrowIcon = styled(FaArrowCircleUp)`
+  width: 30px; // Adjust width if necessary
+  height: 30px; // Adjust height if necessary
   margin-bottom: 5px;
-`
+`;
 
 const ScrollPercentage = styled.div`
   width: 40px;
@@ -62,7 +62,7 @@ const ScrollPercentage = styled.div`
   font-size: 12px;
   padding: 5px;
   font-weight: bold;
-`
+`;
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -101,7 +101,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Router >
+      <Router>
         <Navbar />
         <Body>
           <HeroSection />
@@ -115,9 +115,9 @@ function App() {
             <Contact />
           </Wrapper>
           <Footer />
-          {openModal.state &&
+          {openModal.state && (
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          }
+          )}
           <ScrollIndicatorWrapper visible={scrollVisible} onClick={scrollToTop}>
             <ArrowIcon />
             <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
@@ -128,4 +128,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
