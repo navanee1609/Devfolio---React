@@ -64,12 +64,25 @@ const ScrollPercentage = styled.div`
     font-weight: bold;
 `;
 
+// Add the tooltip component
+const ScrollTooltip = styled.div`
+    background-color: #575c66;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px; // Adjust padding as needed
+    margin-bottom: 10px; // Space between tooltip and icon
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap; // Keep text on one line
+`;
+
 function App() {
     const [darkMode, setDarkMode] = useState(true);
     const [openModal, setOpenModal] = useState({ state: false, project: null });
     const [scrollPercentage, setScrollPercentage] = useState(0);
     const [scrollVisible, setScrollVisible] = useState(false);
-    const [welcomeModalVisible, setWelcomeModalVisible] = useState(true); // State for controlling the visibility of the welcome modal
+    const [welcomeModalVisible, setWelcomeModalVisible] = useState(true);
 
     useEffect(() => {
         const updateScrollPercentage = () => {
@@ -77,7 +90,7 @@ function App() {
             const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
             const clientHeight = document.documentElement.clientHeight || window.innerHeight;
             const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
-            setScrollPercentage(scrolled);
+            setScrollPercentage(Math.round(scrolled));
         };
 
         const handleScroll = () => {
@@ -93,7 +106,6 @@ function App() {
         };
     }, []);
 
-    // Handle page scrolling when the welcome modal is open
     useEffect(() => {
         const bodyElement = document.body;
         if (welcomeModalVisible) {
@@ -130,6 +142,8 @@ function App() {
                         <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
                     )}
                     <ScrollIndicatorWrapper visible={scrollVisible} onClick={scrollToTop}>
+                        {/* Tooltip for scroll to top */}
+                        <ScrollTooltip>Scroll to top</ScrollTooltip>
                         <ArrowIcon />
                         <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
                     </ScrollIndicatorWrapper>
