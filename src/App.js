@@ -64,19 +64,6 @@ const ScrollPercentage = styled.div`
     font-weight: bold;
 `;
 
-// Add the tooltip component
-const ScrollTooltip = styled.div`
-    background-color: #575c66;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 10px; // Adjust padding as needed
-    margin-bottom: 10px; // Space between tooltip and icon
-    font-size: 12px;
-    font-weight: bold;
-    white-space: nowrap; // Keep text on one line
-`;
-
 function App() {
     const [darkMode, setDarkMode] = useState(true);
     const [openModal, setOpenModal] = useState({ state: false, project: null });
@@ -112,7 +99,7 @@ function App() {
             bodyElement.style.overflow = 'hidden';
         } else {
             bodyElement.style.overflow = 'auto';
-        }
+        };
     }, [welcomeModalVisible]);
 
     const scrollToTop = () => {
@@ -142,8 +129,6 @@ function App() {
                         <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
                     )}
                     <ScrollIndicatorWrapper visible={scrollVisible} onClick={scrollToTop}>
-                        {/* Tooltip for scroll to top */}
-                        <ScrollTooltip>Scroll to top</ScrollTooltip>
                         <ArrowIcon />
                         <ScrollPercentage>{Math.round(scrollPercentage)}%</ScrollPercentage>
                     </ScrollIndicatorWrapper>
